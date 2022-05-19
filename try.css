@@ -1,0 +1,234 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.headerbg{
+    background-image:url("Assets/Images/main_3D.jpg");
+    height:80vh;
+    background-size: cover;
+    background-position:center;
+}
+
+#cokeCanvas{
+    border:10px;
+}
+
+
+@font-face {
+    font-family: cocaColaFont;
+    src: url('Assets/Fonts/LOKICOLA.TTF');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('Assets/Fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('Assets/Fonts/Oswald-VariableFont_wght.ttf');
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #fff3cd;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+
+div.desc {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    width:180px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family:'Oswald';
+}
+
+
+body {
+    background: linear-gradient(-45deg, #ff0000,#008B47, #000000, #dc143c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1{
+    font-family:'Oswald';
+    color: #fff;
+}
+p{
+    font-family: 'sans-serif';
+    font-size: 18px;
+    color: #fff;
+}
+
+#navbar {
+    background-color: #f1b0b7;
+}
+
+#navbar-brand{
+    font-family: "cocaColaFont";
+
+}
+
+.navbar_coca_cola {
+    background-color: #760003; /* Set navbar background color */
+    /* border-color: yellow; Sets the navbar border color */
+    /* border-style: solid; */
+    border-width: 0px;
+    min-height: 70px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+    color: rgb(245, 235, 235);
+}
+
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+
+/* NAVIGATION MENU
+*/
+
+/* CSS rules to overwrite the position of the Bootstrap menu These are derived from the Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU
+There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
+*/
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white;
+}
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover,
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;
+}
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active,
+.navbar_coca_cola .navbar-nav > .active > a:hover,
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #760003; /* Font color for active font */
+    background-color: #3399ff; /* Blue color for background */
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover,
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: green;
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+/* Let's style the dropdown menu
+*/
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #b6e7f3;
+    margin-top: 20px; /* Experiment to move the dropdown menu down */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #eb0025;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+
+.footer {
+    color: #030303;
+    background-color: #760003; /* Set navbar footer background color same as header */
+    height: 50px;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+    width: 60%;
+}
+
+.social {
+    padding-top: 0px;
+    width: 30%;
+}
+
+.fa-twitter-square:before {
+    content: "\f081";
+    color: yellow;
+    font-size: 3em;
+}
+
+.fa-github-square:before {
+    content: "\f092";
+    color: white;
+    font-size: 3em;
+}
+
+.fa-google-plus-square:before {
+    content: "\f0d4";
+    color: blue;
+    font-size: 3em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: blue;
+    font-size: 3em;
+}

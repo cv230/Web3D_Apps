@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=width=device-width, initial-scale=1, shrink-to-fit=no>
+    <!--LINKING BOOTSTRAP CSS-->
+    <link rel='stylesheet' href="bootstrap-4.6.1-dist\bootstrap-4.6.1-dist\css\bootstrap.css">
+    <title>Index</title>
+    <!--lINKING CUSTOM CSS-->
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+
+    <div id="one"><b>Homepage</b>Welcome to my website</div>
+    <div id="two" style="display:none"><b>Work</b> here is my work </div>
+    <div class="container-fluid">
+        <h1>Hello World!</h1>
+        <p>Resize the browser</p>
+
+        <!---NAVBAR DROPDOWN CODE FROM VSCODE-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey</h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Drinks
+                    </a>
+                    <script type="text/javascript">
+                        function swap(selected){
+                        document.getElementById('home').style.display='none';
+                        document.getElementById('coke').style.display='none';
+                        document.getElementById('sprite').style.display='none';
+                        document.getElementById('pepper').style.display='none';
+                        
+                        document.getElementById(selected).style.display ='block';
+                    }
+                        </script>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="javascript:swap("coke.html")">Coca Cola</a>
+                        <a class ="dropdown-item" href="javascript:swap('sprite')">Sprite</a>
+                        <a class="dropdown-item" href="javascript:swap('dr.pepper')">Dr.pepper</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <div class="container main_contents">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="main_3d_image">
+                        <div id="main_text" class="col-xs-12 col-sm-4">
+                            <a href:"javascript:swap('coke')"></a>
+                            <h2> Coco Cola Great Britian</h2>
+                            <h3>Founded by Dr John S Pemberton</h3>
+                            <p>The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor
+                                of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CODE FOR THE THREE MAIN COLUMNS OF THE PAGE -->
+        <div class="row">
+            <div class="col-sm-12" style="background-color: red;">.col-sm-12 THE MAIN PIC</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="javascript:swap('coke')">
+                        <img class="card-img-top img-fluid img-thumbnail" src="Assets\Images\coca_cola.jpg"
+                            alt="coca_cola">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Coca Cola</h3>
+                        <p class="card-text">History of Coca Cola: 1886-1892
+                            Atlanta Beginnings: It was 1886, and in New York Harbour, workers were constructing the
+                            Statue of Liberty. Eight hundred miles away, another great American symbol was about to be
+                            unveiled.
+                            Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by
+                            simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when
+                            it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was
+                            combined with carbonated water and sampled by customers who all agreed - this new drink was
+                            something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.
+                        </p>
+                        <a href="#" class="btn btn-primary"> Find out more ...</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="Assets\Images\sprite.jpg" alt="sprite">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Sprite</h3>
+                        <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now
+                            the world's leading lemon and lime flavoured soft drink and is sold in more than 190
+                            different countries.
+                            Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of
+                            Sprite without the sugar or calories.
+                        </p>
+                        <a href="#" class="btn btn-primary">Find out more...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="Assets\Images\dr_pepper.jpg"
+                            alt="dr_pepper">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Dr.Pepper</h3>
+                        <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around
+                            for well over a century and it's still the same, with that distinctive flavour you just
+                            can't quite put your tongue on.
+                            It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first
+                            ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock
+                            the drink. The distinctive, bold taste of Dr Pepper has been popular ever since.
+                        </p>
+                        <a href="#" class="btn btn-primary">Find out more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--CODE FOR THE FOOTER-->
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div class="navbar-text float-left copyright">
+                    <p><span class="align-baseline"></span>&copy 2022 MOBILE WEB 3D APPLICATIONS</span></p>
+                </div>
+                <div class="navbar-text float-right social">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
